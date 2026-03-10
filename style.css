@@ -1,7 +1,9 @@
 body{
     font-family: 'Bebas Neue', sans-serif;
-
+    color: white;
+    background-color: rgba(0, 0, 0, 0.662);
 }
+
 
 
 header{
@@ -13,8 +15,17 @@ header{
     position: fixed;
     
 
-    
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     border-bottom: 3px solid gray;
     box-shadow: 0 8px 10px -6px gray;
     z-index: 5;
+}
+
+header,texto{
+    padding-left: 50px;
+    font-size: 70px;
+}
+
+.inicio{
+    padding-top: 100px;
 }
