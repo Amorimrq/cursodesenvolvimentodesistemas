@@ -3,8 +3,7 @@ body{
     color: white;
     background-image: url(https://wallpapers.com/images/hd/2560-x-1440-movie-2560-x-1440-56mproziihvmfjsd.jpg);    
     background-size: cover;
-
-   
+    background-attachment: fixed;
 }
 
 
@@ -15,30 +14,73 @@ header{
     top:0;
     left: 0;
     height: 100px;
-    width: 100%;
+    width: 97%;
     color: white;
-    position: fixed;
+    position: absolute;
     
-
+    background-position: fixed;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     border-bottom: 3px solid gray;
     box-shadow: 0 8px 10px -6px gray;
-    z-index: 5;
+    
 }
 
 header,texto{
     padding-left: 50px;
     font-size: 70px;
+
 }
 
 .pesquisa::placeholder {  
     color: white;
     background-color: black;    
     padding: 10px;
-  
-
-
 }   
-.inicio{
-    padding-top: 100px;
+.nada{
+    color: transparent;
+}
+.caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 500px;
+  
+    background-color: rgba(0, 0, 0, 0.571);
+    border: 2px solid black;
+    
+}
+
+.filmes_titulo{
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filmes_botoes {
+  margin: 20px;
+  width: 200px; 
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #141414; 
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+.filmes_botoes img {
+  width: 100%; 
+  display: block;
+}
+
+.filmes_botoes p {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.filmes_botoes:hover {
+  transform: scale(1.1); 
+  z-index: 10; 
 }
