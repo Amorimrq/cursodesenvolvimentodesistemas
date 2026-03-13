@@ -144,20 +144,20 @@ input.pesquisa{
   font-weight: bold;
 }
 
-.filme-link{
+.card{
   color: inherit;
   text-decoration: none;
   display: block;
 }
 
-.filme-link.card-link{
+.card{
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.filme-link:hover{
+.card:hover{
   text-decoration: underline;
 }
 

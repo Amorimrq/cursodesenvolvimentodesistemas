@@ -1,117 +1,80 @@
-﻿.filme-page{
-  color: #fff;
+﻿*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+    
+    background-image: url(https://wallpapers.com/images/hd/2560-x-1440-movie-2560-x-1440-56mproziihvmfjsd.jpg);    
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
 }
 
-.filme-container{
-  width: min(1100px, 92vw);
-  margin: 0 auto 60px;
+header{
+    font-family: 'Bebas Neue', sans-serif;
+    top:0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: left;
+    background-position: fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    border-bottom: 3px solid gray;
+    box-shadow: 0 8px 10px -6px gray;
+    
 }
 
-.filme-hero{
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 30px;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 30px;
+header,texto{
+    padding-left: 50px;
+    font-size: 70px;
+
 }
 
-.filme-poster{
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-}
 
-.filme-info h1{
-  font-size: 64px;
-  margin: 0 0 10px;
-}
-
-.filme-tagline{
-  font-size: 20px;
-  margin: 0 0 16px;
-  opacity: 0.9;
-}
-
-.filme-dados{
+.caixa{
+  border-radius: 30px;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgba(0, 0, 0, 0.34);
   display: flex;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.filme-dados span{
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-.filme-sinopse{
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.filme-acoes{
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.btn-voltar,
-.btn-trailer{
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 18px;
-}
-
-.btn-trailer{
-  background: #e50914;
-  border-color: #e50914;
-}
-
-.filme-detalhes{
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.filme-detalhes div{
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  align-items: flex-start;
+  gap: 24px;
   padding: 16px;
 }
 
-.filme-detalhes h2{
-  margin: 0 0 8px;
-  font-size: 22px;
+.posterfilme, img{
+  margin: 10px;
+  border-radius: 16px;
+
 }
 
-.filme-detalhes p{
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
+
+.titulo{
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-@media (max-width: 900px){
-  .filme-hero{
-    grid-template-columns: 1fr;
-  }
-
-  .filme-info h1{
-    font-size: 44px;
-  }
-
-  .filme-detalhes{
-    grid-template-columns: 1fr;
-  }
+.caixadescricao{
+  background-color: rgba(0, 0, 0, 0.504);
+  border-radius: 16px;
+  text-align: bottom;
 }
+
+.enredo, .paragrafo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 10px;
+  
+
+}
+
