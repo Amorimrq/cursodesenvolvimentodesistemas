@@ -10,35 +10,44 @@ body{
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    padding-top: 110px;
     
 }
 
 header{
     top:0;
     left: 0;
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     color: white;
-    position: absolute;
-    text-align: left;
+    position: fixed;
+    display: flex;
+    align-items: end;
+    padding: 10px 50px;
     background-position: fixed;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     border-bottom: 3px solid gray;
     box-shadow: 0 8px 10px -6px gray;
+    z-index: 1000;
     
 }
 
-header,texto{
-    padding-left: 50px;
+
+
+.texto{
     font-size: 70px;
-    
-
 }
 
-.links{
+.inicio p, .categorias p {
+  color: #f5f5f5;
   text-decoration: none;
-    font-size: 10px;
+  font-size: 35px;
+  margin-left:50px;
+  display: flex;
+  flex-direction:row;
 }
+
+
 
 .pesquisa::placeholder {  
   background-color: transparent;
@@ -104,7 +113,7 @@ input.pesquisa{
   border-top: 2px solid black;
 }
 
-.caixa2,.caixa4{
+.caixa2, .caixa4{
   display: flex;
   flex-direction: row;
   justify-content: start;  
@@ -119,6 +128,21 @@ input.pesquisa{
   margin: 0;
   padding-bottom: 70px;
   
+}
+
+.categoria-titulo{
+  font-size: 48px;
+  margin: 20px 30px 10px;
+  text-transform: uppercase;
+}
+
+.categoria-caixa{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 30px 30px;
+  background-color: rgba(0, 0, 0, 0.571);
+  border-top: 2px solid black;
 }
 
 
