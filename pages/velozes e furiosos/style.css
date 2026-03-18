@@ -39,14 +39,17 @@ header{
   color: white;
 }
 
-.inicio , .categoria  {
+.inicio , .categoria, .inicio:hover, .categoria:hover  {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 35px;
+  transition: transform 03 ease;
 }
-.inicio{margin-left: 700px;}
+.inicio{margin-left: 1500px;}
 
 .categoria{margin-left: 20px ;}
+
+
 
 
 .caixa{
@@ -176,9 +179,10 @@ footer{
 }
 
 footer{
+  font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   margin-top: 50px;
-  padding: 50px;
+  padding: 80px;
   background-color: rgb(0, 0, 0);
   
 }
