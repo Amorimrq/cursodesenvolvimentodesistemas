@@ -4,6 +4,8 @@
   box-sizing: border-box;
 } 
 
+
+
 body{
     font-family: 'Bebas Neue', sans-serif;
     background-image: url(https://wallpapers.com/images/hd/2560-x-1440-movie-2560-x-1440-56mproziihvmfjsd.jpg);    
@@ -14,6 +16,7 @@ body{
     
 }
 
+
 header{
     top:0;
     left: 0;
@@ -22,31 +25,34 @@ header{
     color: white;
     position: fixed;
     display: flex;
-    align-items: end;
+    align-items: center;
     padding: 10px 50px;
     background-position: fixed;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     border-bottom: 3px solid gray;
     box-shadow: 0 8px 10px -6px gray;
     z-index: 1000;
+    text-decoration: none;
     
 }
 
 
 
-.texto{
+.texto {
     font-size: 70px;
+    text-decoration: none;
+    color:white;
 }
 
-.inicio p, .categorias p {
+
+.inicio , .categoria  {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 35px;
-  margin-left:50px;
-  display: flex;
-  flex-direction:row;
 }
+.inicio{margin-left: 700px;}
 
+.categoria{margin-left: 20px ;}
 
 
 .pesquisa::placeholder {  
@@ -84,19 +90,23 @@ input.pesquisa{
 
 .search-button{ 
   font-family: "Bebas Neue", sans-serif;
-  display: block;
-  border: solid;
-  border-radius: 5px;
-  cursor: pointer; 
-  transition: transform 0.3s ease;
-  margin: 0;
-  padding: 10px;
+  font-size: 30px;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
 }
 
 
 
 .search-button:active{
   transform: scale(0.9);
+  box-shadow: none;
 }
 
 .nada{
@@ -194,3 +204,51 @@ input.pesquisa{
   transform: scale(1.1); 
   z-index: 10; 
 }
+
+
+.categoriah1{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.caixa_links{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.571);
+  margin-left: 500px;
+  margin-right: 500px;
+  border-radius: 16px;
+  
+}
+section{
+  scroll-margin-top: 140px;
+}
+
+.herois, 
+.acao,
+.ficcao,
+.animacao,
+.terror,
+.drama,
+.comedia,
+.serie{
+  
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
+  background-color: rgb(0, 0, 0);
+  
+} 

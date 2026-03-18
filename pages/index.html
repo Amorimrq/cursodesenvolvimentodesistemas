@@ -6,19 +6,45 @@
   <title>OliveiraFilms - Categorias</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
 </head>
 <body>
   <header>
-    <span class="texto">OliveiraFilms</span>
-    <div class="inicio">
-      <a href="../index.html"><p>inicio</p></a>
-    </div>
+    <nav>
+      <ul>
+        <a href="../index.html" class="texto">OliveiraFilms</a>
+        <a href="../index.html" class="inicio">Inicio</a>
+        <a href="index.html" class="categoria">Categoria</a>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h1 class="filmes_titulo">Categorias</h1>
 
-    <h2 class="categoria-titulo">Super-heroi</h2>
+  <main>
+    <h1 class="categoriah1">Categorias</h1>
+    
+    <div class="caixa_links">
+        <nav>
+          <ul>
+            <a href="#super-heroi" class="herois">Heróis</a> 
+            <a href="#acao" class="acao">Ação</a>
+            <a href="#ficcao" class="ficcao">Ficção</a> <br>
+            
+            <a href="#terro" class="terror">Terror</a>
+             
+            <a href="#comedia" class="comedia">Comédia</a>
+            <a href="#serie" class="serie">Série</a><br>
+            
+            <a href="#drama" class="drama">Drama e Suspense</a>
+            <a href="#animacao" class="animacao">Animação</a>
+          </ul>
+        </nav>
+
+    </div>
+    
+
+  <section id="super-heroi">
+    <h2 class="categoria-titulo">Super-herói</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="homem-aranha/index.html">
@@ -45,8 +71,10 @@
         </a>
       </div>
     </div>
-
-    <h2 class="categoria-titulo">Acao</h2>
+  </section>
+  
+  <section id="acao">
+  <h2 class="categoria-titulo">Ação</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="velozes e furiosos/veloz.html">
@@ -79,8 +107,10 @@
         </a>
       </div>
     </div>
+  </section>
 
-    <h2 class="categoria-titulo">Ficcao cientifica</h2>
+  <section id="ficcao">
+    <h2 class="categoria-titulo">Ficção científica</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="interstellar/index.html">
@@ -109,12 +139,14 @@
       <div class="filmes_botoes">
         <a class="card" href="circulo-de-fogo/index.html">
           <img src="https://upload.wikimedia.org/wikipedia/pt/f/f3/Pacific_Rim_FilmPoster.jpeg" alt="capa do filme">
-          <p>Ci­rculo de Fogo</p>
+          <p>Cí­rculo de Fogo</p>
         </a>
       </div>
     </div>
-
-    <h2 class="categoria-titulo">Animacao</h2>
+    </section>
+    
+  <section id="animacao">
+    <h2 class="categoria-titulo">Animação</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="toy-story-2/index.html">
@@ -135,7 +167,9 @@
         </a>
       </div>
     </div>
+  </section>
 
+  <section id="terror">
     <h2 class="categoria-titulo">Terror</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
@@ -151,7 +185,9 @@
         </a>
       </div>
     </div>
+  </section>
 
+  <section id="drama">
     <h2 class="categoria-titulo">Drama e suspense</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
@@ -161,20 +197,16 @@
         </a>
       </div>
       <div class="filmes_botoes">
-        <a class="card" href="senna/index.html">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ25d0lgOO1xVIfx5zu9gYSP6i_ko7DkrndQ&s" alt="capa do filme">
-          <p>Senna</p>
-        </a>
-      </div>
-      <div class="filmes_botoes">
         <a class="card" href="joker-folie-a-deux/index.html">
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Joker_-_Folie_%C3%A0_Deux_poster.jpg/250px-Joker_-_Folie_%C3%A0_Deux_poster.jpg" alt="capa do filme">
           <p>Joker: Folie à Deux</p>
         </a>
       </div>
     </div>
-
-    <h2 class="categoria-titulo">Comedia</h2>
+  </section>
+    
+  <section id="comedia">
+    <h2 class="categoria-titulo">Comédia</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="gente-grande/index.html">
@@ -183,8 +215,10 @@
         </a>
       </div>
     </div>
-
-    <h2 class="categoria-titulo">Serie</h2>
+  </section>   
+  
+  <section id="serie">  
+    <h2 class="categoria-titulo">Série</h2>
     <div class="categoria-caixa">
       <div class="filmes_botoes">
         <a class="card" href="supernatural/index.html">
@@ -192,7 +226,21 @@
           <p>Supernatural</p>
         </a>
       </div>
+      <div class="filmes_botoes">
+        <a class="card" href="senna/index.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ25d0lgOO1xVIfx5zu9gYSP6i_ko7DkrndQ&s" alt="capa do filme">
+          <p>Senna</p>
+        </a>
+      </div>
     </div>
+    </section>
   </main>
+
+  <footer>
+        <p>© 2026 OliveiraFilms. Todos os direitos reservados.</p>
+        <p>amorimrq@gmail.com</p>
+        <p>(11) 95375-6056</p>
+    </footer>
+</body>
 </body>
 </html>
